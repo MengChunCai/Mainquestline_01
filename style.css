@@ -1,0 +1,319 @@
+/*引入字體*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*CSS RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*顏色*/
+:root {
+  --primary_400: #57a203;
+  --primary_100: #f5fee7;
+  --neutral_0: #ffffff;
+  --neutral_100: #f8f9fa;
+  --neutral_300: #dee2e6;
+  --neutral_600: #6c757d;
+  --neutral_900: #212529;
+}
+/*標籤基本樣式*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+a {
+  color: var(--primary_400);
+  text-underline-offset: 4px;
+  display: block;
+}
+
+body {
+  font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--neutral_900);
+}
+
+/*通用樣式*/
+.container {
+  width: 856px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text_sm {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text_white {
+  color: var(--neutral_0);
+}
+
+/*文字顏色通用樣式*/
+.text_primary_400 {
+  color: var(--primary_400);
+}
+
+.text_primary_600 {
+  color: var(--primary_600);
+}
+
+.bg_primary_100 {
+  background-color: var(--primary_100);
+}
+
+.bg_neutral_100 {
+  background-color: var(--neutral_100);
+}
+
+.p_32 {
+  padding: 32px;
+}
+
+.py_8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/*Y方向推擠樣式*/
+.py_64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.pb_48 {
+  padding-bottom: 48px;
+}
+
+.pe_8 {
+  padding-right: 8px;
+}
+
+.mb_4 {
+  margin-bottom: 4px;
+}
+
+.mb_12 {
+  margin-bottom: 12px;
+}
+
+.mb_16 {
+  margin-bottom: 16px;
+}
+
+.mb_24 {
+  margin-bottom: 24px;
+}
+
+.mb_48 {
+  margin-bottom: 48px;
+}
+
+/*Page*/
+.header {
+  background-image: url(/img/section.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 152px 0;
+  text-align: center;
+}
+
+.eng_title {
+  font-size: 28px;
+}
+
+.quote {
+  border-radius: 12px;
+  text-align: center;
+}
+
+.intro img {
+  width: 1076px;
+  margin-right: -110px;
+  margin-left: -110px;
+}
+
+.section_line {
+  border-bottom: 1px solid var(--neutral_300);
+}
+
+.history_desc {
+  border-left: 1px solid var(--neutral_900);
+  padding-left: 8px;
+}
+
+.history_list {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+.concept_item {
+  padding-left: 12px;
+  border-left: 3px solid var(--neutral_300);
+}
+
+.bi {
+  padding-right: 8px;
+  vertical-align: bottom;
+}
+
+.footer {
+  text-align: center;
+}
